@@ -14,3 +14,12 @@ When button pressed twice the counter is two
     Click Button  Paina
     Click Button  Paina
     Page Should Contain  nappia painettu 2 kertaa
+
+Increment Counter By
+    Go To  ${HOME_URL}
+    Click Button  Nollaa
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
+    
+
